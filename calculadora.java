@@ -12,7 +12,7 @@ public class calculadora {
         System.out.println("3 para PJ");
 
         int regimePagamento = teclado.nextInt();
-        double valorReceber = 3;
+        double valorReceber = 0;
 
         if(regimePagamento == 1){
             System.out.println("Digite o salário mensal do professor ");
@@ -21,9 +21,9 @@ public class calculadora {
             valorReceber = professorCLT.calcularValor();
         }
         else if(regimePagamento == 2){
-            System.out.println("Digite horas trabalhadas");
+            System.out.println("Digite valor horas trabalhadas");
             double valorHoras = teclado.nextDouble();
-            System.out.println("Digite o valor da hora");
+            System.out.println("Digite horas trabalhadas");
             double horasTrabalhadas = teclado.nextDouble();
             professorHorista professorHorista =  new professorHorista(nome, horasTrabalhadas, valorHoras);
             valorReceber = professorHorista.calcularValor();
