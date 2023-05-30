@@ -3,6 +3,10 @@ public class professorHorista extends professor {
     private double valorHoras;
     
 public professorHorista(String nome, double horasTrabalhadas, double valorHoras) {
+    this.nome = nome;
+    this.horasTrabalhadas = horasTrabalhadas;
+    this.valorHoras = valorHoras;
+
     }
 public double getHorasTrabalhadas() {
     return horasTrabalhadas;
